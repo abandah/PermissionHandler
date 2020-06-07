@@ -36,6 +36,10 @@ dependencies {
 **Step 3.**  Caller 
 
 ```
+     Perm.With(this).withPermission(Manifest.permission.ACCESS_COARSE_LOCATION).Run(101);
+```
+Or just use preexisting Methods if it is available yet
+```
      Perm.With(this).ACCESS_COARSE_LOCATION().Run(101);
 
 ```
@@ -60,3 +64,6 @@ dependencies {
 }
         
 ```
+Preexisting Methods
+=====
+1- ACCESS_COARSE_LOCATION()
