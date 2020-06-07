@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SNavigationDrawer">
+        <attr name="appbarColor" format="color" />
+        <attr name="appbarTitleTextColor" format="color" />
+        <attr name="appbarTitleTextSize" format="dimension" />
+        <attr name="HamMenuIconTintColor" format="color" />
+        <attr name="HamMenuIconSize" format="dimension" />
+        <attr name="HamMenuItemSemiTransparentColor" format="color" />
+        <attr name="navigationDrawerBackgroundColor" format="color" />
+        <attr name="primaryMenuItemTextColor" format="color" />
+        <attr name="secondaryMenuItemTextColor" format="color" />
+        <attr name="primaryMenuItemTextSize" format="dimension" />
+        <attr name="secondaryMenuItemTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the APIinterface level.
+         ?android:attr/buttonBarStyle is new as of APIinterface 11 so this is
+         necessary to support previous APIinterface levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ListSwipeRefreshLayout">
+        <attr name="normalLay" format="reference"/>
+        <attr name="emptyLay" format="reference"/>
+
+    </declare-styleable>
+
+</resources>

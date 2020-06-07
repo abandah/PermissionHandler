@@ -1,11 +1,112 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Base application theme.
+     Theme.AppCompat.Light.DarkActionBar-->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
     </style>
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <style name="TextAppearance.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+    </style>
+
+    <style name="TextAppearance.Spinner" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance">
+    </style>
+
+    <style name="TextAppearance.InputSmallfield">
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/lightgray</item>
+    </style>
+
+    <style name="TextAppearance.TextInputEditTextEditable" parent="TextAppearance.InputSmallfield">
+        <item name="android:imeOptions">actionNext|flagNoExtractUi</item>
+
+    </style>
+
+    <style name="TextAppearance.TextInputEditTextClickable" parent="TextAppearance.InputSmallfield">
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:imeOptions">actionNext|flagNoExtractUi</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:focusableInTouchMode">false</item>
+
+
+    </style>
+
+    <style name="TextAppearance.SmallMainMessage">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="TextAppearance.MediumMainMessage">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.BigMainMessage">
+        <item name="android:textSize">22sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.Smallfield">
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textColor">@color/lightgray</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/lightgray</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:textColorHint">@color/lightgray</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <!--
+                <item name="android:textColor">?textColorSecondary</item>
+        -->
+    </style>
+
+
+    <style name="Theme.AppCompat.transparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="TextAppearance.ItemOther">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/lightgray</item>
+
+    </style>
+
+
 
 </resources>

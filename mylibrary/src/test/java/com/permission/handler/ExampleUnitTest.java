@@ -1,4 +1,4 @@
-package com.error.handler;
+package com.permission.handler;
 
 import org.junit.Test;
 

@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="white">#FFFFFF</color>
+
+    <color name="red">#ff6767</color>
+    <color name="orange">#ffb067</color>
+    <color name="green">#67ffae</color>
+    <color name="blue">#6785ff</color>
+    <color name="lightgray">#9C9C9C</color>
+
+
+    <color name="white">#ffffff</color>
+
+    <color name="shimmergray">#66686868</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="transparent_black_percent_60">#99000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="subsubmain">#727272</color>
+    <color name="submain">#474747</color>
+    <color name="main">#161616</color>
+
+    <color name="pf_grey">#262626</color>
+    <color name="pf_grey_light">#999999</color>
+    <color name="pf_white">#ffffff</color>
+
 
 </resources>
