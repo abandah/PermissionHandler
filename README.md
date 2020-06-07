@@ -29,30 +29,34 @@ gradle
 
 ```
 dependencies {
-    implementation 'com.github.abandah:ErrorHandler:0.1.4'
+    implementation 'com.github.abandah:PermissionHandler:0.0.1'
 }
 ```
 
-**Step 3.**  Create new Class extends Application and add Code inside onCreate()
+**Step 3.**  Caller 
 
 ```
-public class app extends Application {
+     Perm.With(this).ACCESS_COARSE_LOCATION().Run(101);
+
+```
+**Step 4.**  Make Activity or Fragment extends PermissionListener and over ride the methods 
+
+```
+............ implements PermissionListener {
+@Override
+    public void onPermissionGranted(int index) {
+
+    }
 
     @Override
-    public void onCreate() {
-        super.onCreate();
-            new UCEHandler.Builder(this)
-                    .setTrackActivitiesEnabled(false)
-                    .setLink("WebService Link here")
-                    .build();
-}
-```
-**Step 4.**  Add  android:name=".app" under application in manifist:
+    public void onPermissionDenied(int index) {
 
-```
- <application
-        android:name=".app"
-        .
-        .
+    }
+
+    @Override
+    public void onPermissionRationaleShouldBeShown(int index) {
+
+    }
+}
         
 ```
