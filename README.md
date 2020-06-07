@@ -1,9 +1,8 @@
-# ErrorHandler
-[![Release](https://jitpack.io/v/abandah/ErrorHandler.svg?style=flat-square)](https://jitpack.io/#abandah/ErrorHandler)
+# PermissionHandler
+[![Release](https://jitpack.io/v/abandah/PermissionHandler.svg?style=flat-square)](https://jitpack.io/#abandah/PermissionHandler)
 
-> Error handling library for Android and Java
+> Permission handling library for Android and Java
 
-Encapsulate error handling logic into objects that adhere to configurable defaults. Then pass them around as parameters or inject them via Web Service. 
 
 
 Building with JitPack
