@@ -1,6 +1,6 @@
 # PermissionHandler
 [![Release](https://jitpack.io/v/abandah/PermissionHandler.svg?style=flat-square)](https://jitpack.io/#abandah/PermissionHandler)
-![Release](https://jitpack.io/v/abandah/PermissionHandler.svg?style=flat-square)
+
 > Permission handling library for Android and Java
 
 
