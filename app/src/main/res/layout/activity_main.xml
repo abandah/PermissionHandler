@@ -10,9 +10,19 @@
         android:id="@+id/start_but"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="start from activity"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <FrameLayout
+        android:id="@+id/FragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_but" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

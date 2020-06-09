@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 
 import androidx.annotation.RequiresPermission;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
 
 import com.permission.handler.PermissionListener;
 
@@ -50,8 +49,14 @@ public class Perm implements PermissionListener {
             Perm p = new Perm((Activity) listener);
             p.setPermissionListener((PermissionListener) listener);
             return p;
-        }if(listener instanceof Fragment){
-            Perm p = new Perm(((Fragment)listener).getActivity());
+        }
+        else if(listener instanceof androidx.fragment.app.Fragment){
+            Perm p = new Perm(((androidx.fragment.app.Fragment)listener).getActivity());
+            p.setPermissionListener(listener);
+            return p;
+        }
+        else if(listener instanceof android.app.Fragment){
+            Perm p = new Perm(((android.app.Fragment)listener).getActivity());
             p.setPermissionListener(listener);
             return p;
         }
