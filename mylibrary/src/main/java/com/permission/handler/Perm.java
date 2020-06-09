@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 
+import androidx.annotation.RequiresPermission;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
@@ -61,9 +62,124 @@ public class Perm implements PermissionListener {
         this.setAccessCoarseLocation(accessCoarseLocation);
         return this;
     }
-
+    @RequiresPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
     public Perm ACCESS_COARSE_LOCATION() {
         this.setAccessCoarseLocation(Manifest.permission.ACCESS_COARSE_LOCATION);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+    public Perm ACCESS_FINE_LOCATION() {
+        this.setAccessCoarseLocation(Manifest.permission.ACCESS_FINE_LOCATION);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.ADD_VOICEMAIL)
+    public Perm ADD_VOICEMAIL() {
+        this.setAccessCoarseLocation(Manifest.permission.ADD_VOICEMAIL);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.BODY_SENSORS)
+    public Perm BODY_SENSORS() {
+        this.setAccessCoarseLocation(Manifest.permission.BODY_SENSORS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.CALL_PHONE)
+    public Perm CALL_PHONE() {
+        this.setAccessCoarseLocation(Manifest.permission.CALL_PHONE);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.CAMERA)
+    public Perm CAMERA() {
+        this.setAccessCoarseLocation(Manifest.permission.CAMERA);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.GET_ACCOUNTS)
+    public Perm GET_ACCOUNTS() {
+        this.setAccessCoarseLocation(Manifest.permission.GET_ACCOUNTS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.PROCESS_OUTGOING_CALLS)
+    public Perm PROCESS_OUTGOING_CALLS() {
+        this.setAccessCoarseLocation(Manifest.permission.PROCESS_OUTGOING_CALLS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_CALENDAR)
+    public Perm READ_CALENDAR() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_CALENDAR);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_CALL_LOG)
+    public Perm READ_CALL_LOG() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_CALL_LOG);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_CONTACTS)
+    public Perm READ_CONTACTS() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_CONTACTS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+    public Perm READ_EXTERNAL_STORAGE() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_EXTERNAL_STORAGE);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_SMS)
+    public Perm READ_SMS() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_SMS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.RECEIVE_MMS)
+    public Perm RECEIVE_MMS() {
+        this.setAccessCoarseLocation(Manifest.permission.RECEIVE_MMS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.RECEIVE_SMS)
+    public Perm RECEIVE_SMS() {
+        this.setAccessCoarseLocation(Manifest.permission.RECEIVE_SMS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.RECEIVE_WAP_PUSH)
+    public Perm RECEIVE_WAP_PUSH() {
+        this.setAccessCoarseLocation(Manifest.permission.RECEIVE_WAP_PUSH);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.RECORD_AUDIO)
+    public Perm RECORD_AUDIO() {
+        this.setAccessCoarseLocation(Manifest.permission.RECORD_AUDIO);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
+    public Perm READ_PHONE_STATE() {
+        this.setAccessCoarseLocation(Manifest.permission.READ_PHONE_STATE);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.SEND_SMS)
+    public Perm SEND_SMS() {
+        this.setAccessCoarseLocation(Manifest.permission.SEND_SMS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.USE_SIP)
+    public Perm USE_SIP() {
+        this.setAccessCoarseLocation(Manifest.permission.USE_SIP);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.WRITE_CALENDAR)
+    public Perm WRITE_CALENDAR() {
+        this.setAccessCoarseLocation(Manifest.permission.WRITE_CALENDAR);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.WRITE_CALL_LOG)
+    public Perm WRITE_CALL_LOG() {
+        this.setAccessCoarseLocation(Manifest.permission.WRITE_CALL_LOG);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.WRITE_CONTACTS)
+    public Perm WRITE_CONTACTS() {
+        this.setAccessCoarseLocation(Manifest.permission.WRITE_CONTACTS);
+        return this;
+    }
+    @RequiresPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+    public Perm WRITE_EXTERNAL_STORAGE() {
+        this.setAccessCoarseLocation(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         return this;
     }
 
